@@ -1,0 +1,369 @@
+:root {
+  --clr-Desaturated-Red: #ce9797;
+  --clr-Soft-Red: #f96262;
+  --clr-Dark-Grayish-Red: #413a3a;
+  --clr-linear1: #ffffff;
+  --clr-linear2: #fff5f5;
+  --clr-linear3: #f8bfbf;
+  --clr-linear4: #ee8c8c;
+  --clr-fontsize: 1rem;
+  --text-font: 'Josefin Sans', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+body .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body .section .article {
+  width: 55%;
+  padding: 3.1rem 7.1rem 3.75rem 7.1rem;
+}
+
+body .section .article .section-image {
+  width: 100%;
+}
+
+body .section .article .section-image .title-image {
+  width: 100%;
+  height: 2rem;
+  overflow: hidden;
+}
+
+body .section .article .section-image .title-image img {
+  width: 9.8rem;
+  height: 2rem;
+}
+
+body .section .article .content {
+  width: 27.8rem;
+  height: 25rem;
+  margin-top: 5rem;
+}
+
+body .section .article .content .title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.8rem;
+  font-family: var(--text-font);
+  padding: 1rem;
+}
+
+body .section .article .content .title .title-span {
+  color: var(--clr-Desaturated-Red);
+}
+
+body .section .article .content .text {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  font-family: var(--text-font);
+  font-weight: 400;
+  line-height: 1rem;
+  padding: 1rem;
+}
+
+body .section .article .content .send-btn {
+  margin-top: 3rem;
+  height: 3.37rem;
+  width: 27.81rem;
+  position: relative;
+}
+
+body .section .article .content .send-btn .email {
+  width: 27.81rem;
+  height: 3.37rem;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid;
+  border-color: var(--clr-Desaturated-Red);
+  font-family: var(--text-font);
+  font-size: var(--clr-fontsize);
+  text-indent: 1.5rem;
+}
+
+body .section .article .content .send-btn .email:hover {
+  border-color: var(--clr-Soft-Red);
+}
+
+body .section .article .content .send-btn .danger {
+  display: none;
+}
+
+body .section .article .content .send-btn .send {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 6rem;
+  height: 3.37rem;
+  border-radius: 25px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8c8c));
+  background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
+  cursor: pointer;
+}
+
+body .section .article .content .send-btn .send #svg {
+  color: var(--clr-linear1);
+}
+
+body .section .article .content .send-btn .send:hover {
+  width: 6.2rem;
+  height: 3.5rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff5f5), to(#f8bfbf));
+  background-image: linear-gradient(to right, #fff5f5, #f8bfbf);
+}
+
+body .section .article .content .send-btn .danger-text {
+  display: none;
+}
+
+body .section .images {
+  min-height: 100vh;
+  width: 45%;
+  background-image: url(./img/hero-desktop.jpg);
+  background-size: 100% 100%;
+}
+
+body .sec-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  body .section .article {
+    padding: 3.1rem 7.1rem 3.75rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+  body .section .article {
+    padding: 3.1rem 7.1rem 3.75rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 100%;
+  }
+  body .section {
+    display: none;
+  }
+  body .sec-mobile {
+    max-width: 23.5rem;
+    width: 23.43rem;
+    height: 50rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .sec-mobile .mobile-images {
+    width: 100%;
+    height: 20.9rem;
+  }
+  body .sec-mobile .mobile-images .mobil-base-img {
+    height: 5.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .sec-mobile .mobile-images .mobil-base-img .base-image {
+    height: 5.25rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2rem;
+  }
+  body .sec-mobile .mobile-images .mobil-base-img .base-image .mobile-base {
+    width: 6.25rem;
+    height: 1.1rem;
+  }
+  body .sec-mobile .mobile-images .mobile-hero-img {
+    height: 16.65rem;
+  }
+  body .sec-mobile .mobile-content {
+    height: 29.1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4rem 2rem 4rem 2rem;
+  }
+  body .sec-mobile .mobile-content .mobile-title {
+    height: 9rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--text-font);
+    letter-spacing: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    padding: 1rem;
+  }
+  body .sec-mobile .mobile-content .mobile-title .mobile-span {
+    color: var(--clr-Desaturated-Red);
+  }
+  body .sec-mobile .mobile-content .mobile-text {
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-family: var(--text-font);
+    line-height: 1.5rem;
+    color: var(--clr-Desaturated-Red);
+    text-align: center;
+    font-weight: 400;
+  }
+  body .sec-mobile .mobile-content .mobile-btn {
+    width: 20.6rem;
+    height: 3rem;
+    border: 1px solid;
+    border-color: var(--clr-Desaturated-Red);
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+  }
+  body .sec-mobile .mobile-content .mobile-btn .mobil-mail {
+    width: 16.22rem;
+    height: 3rem;
+    font-family: var(--text-font);
+    text-indent: 2rem;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+  }
+  body .sec-mobile .mobile-content .mobile-btn .mobile-danger {
+    display: none;
+  }
+  body .sec-mobile .mobile-content .mobile-btn .mobile-send {
+    height: 3rem;
+    width: 4rem;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8c8c));
+    background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
+    border-radius: 24px;
+    border: none;
+    color: var(--clr-linear1);
+  }
+  body .sec-mobile .mobile-content .mobile-btn .mobile-send:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#fff5f5), to(#f8bfbf));
+    background-image: linear-gradient(to right, #fff5f5, #f8bfbf);
+  }
+  body .sec-mobile .mobile-content .mobile-btn .mobilesss {
+    display: none;
+  }
+}
+
+.show-text {
+  display: block;
+  color: var(--clr-Soft-Red);
+  font-size: 0.9rem;
+  text-indent: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.mobilesss-on {
+  display: block;
+  color: var(--clr-Soft-Red);
+  font-size: 0.9rem;
+  text-indent: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.show-danger {
+  position: absolute;
+  top: 30%;
+  right: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #f96262;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.mobile-open {
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #f96262;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.show-error {
+  border: 1px solid red !important;
+}
+/*# sourceMappingURL=style.css.map */
